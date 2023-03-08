@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import DiaryInsert from "./component/Diary/DiaryInsert";
+import Header from "./component/Header/Header";
+import { useState } from "react";
+import DiaryList from './component/Diary/DiaryList';
+import Navigation from './component/Navigation/Navigation';
 
 function App() {
+  const [currentMonth, setCurrentMonth] = useState(new Date())
+
+  const onDateChange = (date) => {
+    setCurrentMonth(date)
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex justify-center text-center mx-4">
+      <div className="w-1/3 h-screen shadow-lg shadow-slate-400 rounded-b-xl">
+        
+        <BrowserRouter>
+          <Header/>
+          <Routes>
+            <Route path="/" element={<><Navigation onDateChange={onDateChange} /><DiaryList currentMonth={currentMonth} /></>} />
+            <Route path="/new" element={<DiaryInsert />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
     </div>
   );
 }

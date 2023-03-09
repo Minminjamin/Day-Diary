@@ -8,8 +8,6 @@
 
 - 나의 의미있는 하루를 일기로 써봐요!
 
-* https://react-project-chrys.web.app/
-
 ## 목적
 
 **의도 및 목표 📌**  

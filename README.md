@@ -10,10 +10,6 @@
 
 * https://react-project-chrys.web.app/
 
-<br/>
-
-<br/>
-
 ## 목적
 
 **의도 및 목표 📌**  

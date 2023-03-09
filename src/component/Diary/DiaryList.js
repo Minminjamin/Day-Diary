@@ -31,7 +31,7 @@ const DiaryList = ({currentMonth}) => {
                 <div key={item.id} className = 'mt-3 w-11/12 h-14 bg-slate-300 font-medium rounded-md flex items-center whitespace-nowrap text-ellipsis overflow-hidden'>
                     <Link to={`/${item.id}`} className="flex">
                         <p className='ml-3 mr-5'>{item.id}</p>
-                        <p className='ml-3 '>{item.diary}</p>
+                        <p className='ml-3'>{item.diary}</p>
                     </Link>
                 </div>
             ))}

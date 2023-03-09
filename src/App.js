@@ -16,7 +16,7 @@ function App() {
   
   return (
     <div className="flex justify-center text-center mx-4">
-      <div className="w-1/3 h-screen shadow-lg shadow-slate-400 rounded-b-xl">
+      <div className="w-1/3 h-screen shadow-lg shadow-slate-400 rounded-b-xl ">
         <BrowserRouter>
           <Header/>
           <Routes>

@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# 하루 일기
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a href="https://github.com/Minminjamin" target="_blank">
+<img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
+</a>
 
-## Available Scripts
+### Good to see you!
 
-In the project directory, you can run:
+- 나의 의미있는 하루를 일기로 써봐요!
 
-### `npm start`
+* https://react-project-chrys.web.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br/>
 
-### `npm test`
+## 목적
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**의도 및 목표 📌**  
+매일 매일 쓰는 일기, 하루 일기는 RESTful API를 활용하여 사용자가 일기를 쓰고 수정하며, 필요에 따라 삭제할 수 있는 프로젝트입니다. 이 프로젝트는 CRUD 기능을 학습하고 연습하는 과정에서 만들어졌습니다. 사용자 친화적인 UI/UX를 제공하여 쉽게 일기를 작성하고, 날짜별로 일기를 검색할 수 있습니다. 일기를 서버에 저장하여, 언제 어디서든 접근 가능하도록 구현했습니다. 이 프로젝트는 RESTful API에 대한 이해를 높이고, 클라이언트-서버 모델의 개념을 학습하는 데에 도움이 될 것입니다.
+<br/>
 
-### `npm run build`
+## 기술 스택 🛠
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Front-End📚**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<div>
+	<img  src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white">  
+	<img  src="https://img.shields.io/badge/Tailwind CSS-06B6D4?style=for-the-badge&logo=React&logoColor=white">  
+		<img  src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=React&logoColor=white">  
+</div>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Back-End📚**
 
-### `npm run eject`
+<div>
+	<img  src="https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=React&logoColor=white">  
+</div>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Develop tool🔧**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<div>
+	<img  src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=for-the-badge&logo=React&logoColor=white">  
+</div>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<br/>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 기능🔥
 
-## Learn More
+- JSON을 이용하여 데이터 저장
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- 일기 작성, 수정, 삭제 기능
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+### 파일 트리🎄
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+📦src
+ ┣ 📂components
+ ┃ ┣ 📂Diary
+ ┃ ┃ ┣ 📜DiaryInsert.js
+ ┃ ┃ ┣ 📜DiaryItem.js
+ ┃ ┃ ┣ 📜DiaryList.js
+ ┃ ┃ ┗ 📜DiaryUpdate.js
+ ┃ ┣ 📂Header
+ ┃ ┃ ┗ 📜Header.js
+ ┃ ┣ 📂Navigation
+ ┃ ┃ ┗ 📜Navigation.js
+ ┣ 📂json
+ ┃ ┣ 📜data.json
+ ┃ ┣ 📜Edit.js
+ ┃ ┣ 📜Home.js
+ ┃ ┗ 📜New.js
+ ┣ 📜index.js
+ ┣ 📜App.js
+ ┗ 📜index.css
 
-### Analyzing the Bundle Size
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<br/>
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---

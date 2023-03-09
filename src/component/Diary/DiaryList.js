@@ -28,9 +28,11 @@ const DiaryList = ({currentMonth}) => {
             </div>
             
             {filterDiary.map((item) => (
-                <div key={item.id} className = 'mt-3 w-11/12 h-14 flex bg-slate-300 font-medium items-center rounded-md'>
-                    <p className='ml-3 mr-5'>{item.id}</p>
-                    <p className='ml-3 text-ellipsis overflow-hidden'>{item.diary}</p>
+                <div key={item.id} className = 'mt-3 w-11/12 h-14 bg-slate-300 font-medium rounded-md flex items-center whitespace-nowrap text-ellipsis overflow-hidden'>
+                    <Link to={`/${item.id}`} className="flex">
+                        <p className='ml-3 mr-5'>{item.id}</p>
+                        <p className='ml-3 '>{item.diary}</p>
+                    </Link>
                 </div>
             ))}
         </div>
